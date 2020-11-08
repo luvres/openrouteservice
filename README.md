@@ -18,6 +18,8 @@ docker build -t izone/openrouteservice:v6.2.0 .
 
 ### Split large file
 ```
+cd pbf
+
 split -b 100M brazil-latest.osm_OK.pbf "brazil-latest.osm_OK.pbf.part"
 ```
 ### Join files
